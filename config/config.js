@@ -12,8 +12,8 @@ if (configObj.error) throw configObj.error
 const aws = require('aws-sdk')
 
 aws.config.update({
-  accessKey: configObj.parsed.AWS_SECRET_ACCESS_KEY,
   accessKeyId: configObj.parsed.AWS_ACCESS_KEY_ID,
+  secretAccessKey: configObj.parsed.AWS_SECRET_ACCESS_KEY,
   region: configObj.parsed.AWS_REGION
 })
 
