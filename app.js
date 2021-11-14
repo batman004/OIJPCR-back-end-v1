@@ -22,7 +22,7 @@ process.on('uncaughtException', err => {
     unhandledExceptionListener('UNHANDLED EXCEPTION', err)
 })
 
-const whitelist = 'https://oijpcr-front-end.pages.dev'
+const whitelist = 'https://oijpcr.org'
 
 const corsOptions = {
     origin: function (origin, callback) {
